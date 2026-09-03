@@ -1,0 +1,16 @@
+<?php
+/** @var \Ezzar\ExtraPrice\Block\Product\ExtraPrice $block */
+$extra = $block->getExtraPrice();
+if ($extra === null) {
+    return; // nothing to show
+}
+$isSpecial = $block->isSpecialActive();
+?>
+<div class="price-box extra-price-box" data-role="extra-price-box" style="display:inline-block;margin-left:.5rem;">
+    <span class="price-label"><?= $escaper->escapeHtml(__('Extra Price')) ?></span>
+    <span class="<?= $isSpecial ? 'old-price' : 'regular-price' ?>">
+        <span class="price">
+            <?= /* formatted with currency */ $escaper->escapeHtml($block->formatPrice($extra)) ?>
+        </span>
+    </span>
+</div>
