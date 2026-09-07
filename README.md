@@ -2,6 +2,10 @@
 
 `Ezzar_ExtraPrice` adds RRP and previous-price output to Magento 2 Hyva product cards and product pages. It uses Magento's `price`, `extra_price`, and `special_price` product attributes.
 
+<img width="280" height="105" alt="image" src="https://github.com/user-attachments/assets/91ac05b7-b36d-4340-b803-412d42abfda6" />
+<img width="728" height="374" alt="image" src="https://github.com/user-attachments/assets/f87ed18b-2a03-4942-a90b-ec2baf36a06c" />
+
+
 ## Requirements
 
 - Magento Open Source or Adobe Commerce 2.4.x
